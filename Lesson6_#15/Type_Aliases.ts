@@ -1,6 +1,6 @@
-// thay vi any dung tat ca nhu nayTyoe
+type minhType = number | String
 
-function addNumberOrString (a: number | string, b: number | string){
+function addNOrS(a: minhType, b: minhType){
     if(typeof a === 'number' && typeof b === 'number'){
         return a + b;
     }
@@ -10,6 +10,4 @@ function addNumberOrString (a: number | string, b: number | string){
     throw new Error('Paramenters must be numbers or strings');
 }
 
-console.log(">>> check: ",addNumberOrString("haha"," is a number") );
-
-// dich loi khi complie -> dich code
+console.log(">>> check: ",addNOrS("haha"," is a number") );
